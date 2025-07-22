@@ -1,0 +1,411 @@
+/*-- Use For Custom Styling --*/
+
+/* ===================================
+    About
+====================================== */
+/*
+    Theme Name: wixer
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page Parallax Template
+    Tags: one page, multipurpose, parallax, creative, html5
+
+ */
+/* ===================================
+    Color One
+====================================== */
+
+
+::-webkit-scrollbar {background-color: #f1c30f;}
+::-webkit-scrollbar-thumb {background: #f1c30f;}
+
+.bg-summer-sky {
+    background-color: #f1c30f;
+}
+.hvr-bg-summer-sky:hover {
+    background-color: #f1c30f;
+}
+.overlay {
+    background-color: #f1c30f;
+}
+.color-summer-sky {color: #f1c30f;}
+.btn-summer-sky {
+    border-color: #f1c30f;
+    background-color: #f1c30f;
+}
+.btn-hvr-summer-sky .btn-hvr-effect {
+    background-color: #f1c30f;
+    border-color: #f1c30f;
+}
+.owl-dots .owl-dot::after {
+    background-color: #f1c30f;
+}
+/* Nav Hover Effect */
+.fixed-menu .navbar-nav .nav-link:hover, .fixed-menu .navbar-nav .nav-link.active {
+    color: #f1c30f;
+}
+.nav-bottom-line.fixed-menu .navbar-nav .nav-link::after {
+    background: #f1c30f;
+}
+
+/* fixed nav hover */
+.fixed-menu.navbar-top-default .navbar-nav .nav-link:hover {
+    color: #f1c30f;
+}
+
+.fixed-black-nav.fixed-menu.navbar-top-default .navbar-nav .nav-link:hover {
+    color: #f1c30f;
+}
+.fixed-black-nav.fixed-menu.nav-style.navbar-top-default .navbar-nav .nav-link.active {
+    color: #f1c30f;
+}
+.fixed-black-nav.fixed-menu.nav-style.navbar-top-default .nav-link::before, .fixed-black-nav.fixed-menu.nav-style.navbar-top-default .nav-link::after {
+    background: #f1c30f;
+}
+.bg-nav.bg-summer-sky.fixed-menu.navbar-top-default {
+    background: #f1c30f;
+}
+.navbar.navbar-right .navbar-nav .nav-link.active{
+    color: #f1c30f;
+}
+.fixed-black-nav.fixed-menu .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.side-menu {
+    background: #f1c30f;
+}
+.awaza .tp-count:before{
+    background: #f1c30f;
+}
+.awaza .tp-bullet.selected .tp-count {
+    color: #f1c30f;
+}
+.uranus .tp-bullet-inner{
+    background: #f1c30f;
+}
+.main-title h5 {
+    color: #f1c30f;
+}
+.serial-box:hover {
+    background: #f1c30f;
+}
+.serial-box i {
+    color: #f1c30f;
+}
+.slider-arrows {
+    background: #f1c30f;
+}
+.slider-arrows:hover {
+    background: #f1c30f;
+}
+.team-single.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #f1c30f;
+}
+.cbp-l-grid-mosaic .cbp-caption-activeWrap {
+    background-color: #f1c30f;
+}
+.portfolio-two .filtering .active {
+    color: #f1c30f;
+}
+
+#js-grid-mosaic-flat.cbp-caption-zoom .cbp-caption-activeWrap {
+    background-color: rgba(255, 180, 38, 0.95);
+}
+.cbp-l-grid-mosaic .cbp-caption-activeWrap.summer-sky {
+    background-color: #f1c30f;
+}
+.two-col-pricing .summer-sky.pricing-item:hover {
+    background: #f1c30f;
+    border-color: #f1c30f;
+}
+.testimonial-post:hover a, .testimonial-post:focus a {
+    color: #f1c30f;
+}
+.copyrights a:hover, .copyrights a:focus {
+    color: #f1c30f;
+}
+.footer-icons li a:hover, .footer-icons li a:focus {
+    -webkit-box-shadow: 0 0 15px 30px #f1c30f inset;
+    box-shadow: 0 0 15px 30px #f1c30f inset;
+}
+.meta-tags li a:hover,
+.meta-tags li a:focus{
+    color: #f1c30f;
+}
+.news_item:hover h3 a {
+    color: #f1c30f;
+}
+
+
+.search-box .form-control:focus, .search-box textarea:focus {
+    border-color: #f1c30f;
+}
+.search-box .search-addon {
+    background-color: #f1c30f;
+}
+.search-addon:hover {
+    background: #f1c30f;
+}
+
+.single-post:hover a, .single-post:focus a {
+    color: #f1c30f;
+}
+.categories-name > a > p:hover {
+    color: #f1c30f;
+}
+.tags li:hover, .tags li:focus {
+    background: #f1c30f;
+    border: 1px solid #f1c30f;
+}
+ul.rounded li::before {
+    background: #f1c30f;
+}
+.pagination li > a:hover, .pagination li > a:focus {
+    background: #f1c30f;
+}
+.pagination li.active > a {
+    background: #f1c30f !important;
+}
+
+.shop-setting .cbp-item:nth-child(1) .cbp-caption-activeWrap, .shop-setting .cbp-item:nth-child(3) .cbp-caption-activeWrap,
+.shop-setting .cbp-item:nth-child(5) .cbp-caption-activeWrap, .shop-setting .cbp-item:nth-child(7) .cbp-caption-activeWrap,
+.cbp-item:nth-child(9) .cbp-caption-activeWrap {
+    background: #f1c30f;
+}
+.cbp-search-input:focus {
+    border-color: #f1c30f;
+}
+.cbp-l-grid-blog-title:hover {
+    color: #f1c30f;
+}
+.cbp-l-filters-alignCenter .cbp-filter-item.cbp-filter-item-active {
+    color: #f1c30f;
+}
+.cart-table .display-table:hover .product-name,
+.cart-table .display-table:focus .product-name {
+    color: #f1c30f;
+}
+form.findus select:active, form.findus select:focus {
+    border-color: #f1c30f;
+}
+.share a:hover p{
+    color: #f1c30f;
+}
+ul.shop-description li::before {
+    color: #f1c30f;
+}
+.cart-table .product-name a {
+    color: #f1c30f;
+}
+/* radio buttons */
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #f1c30f;
+}
+.features-one.blue {
+    background: #f1c30f;
+}
+.services-box.hvr-bg-summer-sky i, .services-box.hvr-bg-summer-sky a {
+    color: #f1c30f;
+}
+.services-box:hover i, .services-box:hover h4, .services-box:hover p {
+    color: #ffffff;
+}
+.services-box:hover a {
+     color: #ffffff;
+ }
+.faq-content .faq-items > li > a:hover,
+.faq-content .faq-items > li > a.expanded {
+    background: #f1c30f;
+}
+.loader .loader-container .circle{
+    border: 3px solid rgba(255,180,38,0.30);
+    border-top-color: #f1c30f;
+}
+
+.hr-line {
+    background: #f1c30f;
+}
+
+.count-down-form .form-control:focus {
+    border-bottom: 2px solid #f1c30f !important;
+}
+.form-check input[type="checkbox"]:checked + label::before {
+    background-color: #f1c30f;
+    border-color: #f1c30f;
+}
+
+
+.bg-change.bg-light-gray {
+    background-color: #f1c30f;
+}
+.bg-change.bg-white {
+    background-color: #f1c30f !important;
+}
+
+.nav-bottom-line .navbar-nav .nav-link::after {
+    background: #f1c30f;
+}
+
+.nav-radius .navbar-nav .nav-item .nav-link.active {
+    background: #f1c30f;
+}
+
+.nav-square .navbar-nav .nav-item .nav-link.active {
+    background: #f1c30f;
+}
+
+.nav-scale .navbar-nav .nav-item .nav-link:after {
+    background: #f1c30f;
+}
+
+.nav-three-circles .navbar-nav .nav-item .nav-link:hover {
+    color: #f1c30f;
+}
+.nav-three-circles .navbar-nav .nav-item .nav-link.active::after, .nav-three-circles .navbar-nav .nav-item .nav-link:hover::after {
+    color: #f1c30f;
+    text-shadow: 10px 0 #f1c30f, -10px 0 #f1c30f;
+}
+
+.multipage #menu ul li ul li:hover > a {
+    color: #f1c30f;
+}
+
+.multipage ul li.mega-menu > ul > li ul li a:hover {
+    color: #f1c30f;
+}
+.multipage #menu ul li ul li > a:before {
+    background-color: #f1c30f;
+}
+
+.quarter-triangle {
+    border: 55px solid #f1c30f;
+}
+
+.pricing-style2 .pricing-item.price-transform:hover {
+    background: #f1c30f;
+}
+
+.pricing-style2 .pricing-item .btn-summer-sky {
+    border-color: #f1c30f;
+    background-color: #f1c30f;
+}
+
+.price-table .price h2 {
+    color: #f1c30f;
+}
+.price-table:hover {
+    background: #f1c30f;
+    border-color: #f1c30f;
+}
+
+.btn-summer-sky2 {
+    border-color: #f1c30f;
+    color: #f1c30f;
+}
+
+.btn-hvr-summer-sky2 .btn-hvr-effect {
+    border-color: #f1c30f;
+    color: #f1c30f;
+}
+
+.btn-hvr-summer-sky2:hover, .btn-hvr-summer-sky2:focus{
+    border-color: #f1c30f;
+    color: #f1c30f;
+}
+
+
+.subscribe-box .form-control:focus, .subscribe-box textarea:focus {
+    border-color: #f1c30f;
+}
+
+.news-box a:hover,
+.news-box a:focus{
+    color: #f1c30f;
+}
+.news-box:hover h4 a {
+    color: #f1c30f;
+}
+.news-tags li a i {
+    color: #f1c30f;
+}
+.news-slider .owl-dots .owl-dot {
+    border: 1px solid #f1c30f;
+}
+
+.accordion-two .accordion-box .accordion-header h6[aria-expanded=true] {
+    color: #f1c30f;
+}
+.accordion-item a {
+    background: #f1c30f;
+}
+.tabset-list li:first-child a{
+    background: #f1c30f;
+}
+.tabset-list li:nth-child(2) a{
+    background: #f1c30f;
+}
+.tabset-list li:last-child a {
+    background: #f1c30f;
+}
+
+.timeline-date {
+    background: #f1c30f;
+}
+
+.timeline li .timeline-bullet {
+    background: #f1c30f;
+    border: 3px solid #f1c30f;
+}
+
+.counter-photo ::before {
+    background: #f1c30f;
+}
+.bg-counter-light .icon-counters:hover .img-icon {
+    background: #f1c30f;
+}
+
+/* video button two */
+.video-play-button-small {
+    color: #f1c30f;
+}
+.video-play-button-small:hover, .video-play-button-small:focus{
+    color: #f1c30f;
+}
+
+.two-images li:nth-child(3) .rs-addon-beforeafter-before{
+    background: rgba(241,195,15,.1);
+}
+
+#rev_slider_8_1_forcefullwidth .tparrows.tp-leftarrow,
+#rev_slider_8_1_forcefullwidth .tparrows.tp-rightarrow{
+    border-color: #f1c30f;
+}
+
+#rev_slider_8_1_wrapper .tp-caption span {
+    color: #f1c30f;
+}
+
+/* before-after background */
+
+.wixer li:nth-child(1) .rs-addon-beforeafter-after{
+    background: #f1c30f;
+}
+.wixer li:nth-child(2) .rs-addon-beforeafter-before{
+    background: #f1c30f;
+}
+.wixer li:nth-child(3) .rs-addon-beforeafter-after{
+    background: #f1c30f;
+}
+
+.wixer .tp-bullet.selected .tp-bullet-inner{
+    background: #f1c30f;
+}
+
+.wixer-2 .tp-count:before{
+    background: #f1c30f;
+}
+
+.rev-square {
+    border-color: #f1c30f;
+}
