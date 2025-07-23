@@ -6882,3 +6882,22 @@ ul.count_down.white li p:nth-child(2) {
 .page-header {
 background-attachment: inherit;
 }
+
+/* Custom navbar background for white text visibility */
+.custom-navbar-dark .navbar {
+    background-color: rgba(0, 0, 0, 0.7);  /* dark semi-transparent background */
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .custom-navbar-dark .navbar .nav-link,
+  .custom-navbar-dark .navbar-brand {
+    color: #fff !important;
+  }
+  
+  .custom-navbar-dark .navbar .nav-link:hover {
+    color: #ddd !important;
+  }
+   
+  

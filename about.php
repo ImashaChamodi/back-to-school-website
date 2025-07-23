@@ -1,67 +1,58 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-// Include header and navbar
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
-
-<!-- Hero section with background image -->
-<section class="p-0 no-transition" style="position: relative;">
-    <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container" 
-         style="background: url('images/about_image.jpg') center center/cover no-repeat; height: 600px; position: relative;">
+<!-- About Us Hero Section with Background Image -->
+<section class="p-0">
+    <div class="hero-section" style="
+        background-image: url('images/aboutus.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;">
         
-        <!-- Overlay for dark tint -->
-        <div class="overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5);"></div>
-
-        <!-- Text container -->
-        <div class="container" style="position: relative; z-index: 10; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-            <h2 class="color-white text-capitalize" style="font-size: 3rem; font-weight: 700; margin-bottom: 15px;">
-                About Back To School
-            </h2>
-            <p class="color-white" style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">
-                Empowering Education, One School at a Time
-            </p>
-            <a href="donate.php" class="btn-setting btn-hvr-setting-main btn-summer-sky text-white mt-4" style="padding: 12px 30px; font-weight: 600;">
-                Donate Now
-                <span class="btn-hvr-setting btn-hvr-black">
-                    <span class="btn-hvr-setting-inner">
-                        <span class="btn-hvr-effect"></span>
-                        <span class="btn-hvr-effect"></span>
-                        <span class="btn-hvr-effect"></span>
-                        <span class="btn-hvr-effect"></span>
-                    </span>
-                </span>
-            </a>
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">About Us</h1>
+            <p class="lead text-white">Building futures by rebuilding schools</p>
         </div>
     </div>
 </section>
 
-<!-- About content -->
-<section class="about-us-section pt-5 pb-5">
-  <div class="container">
-    <h3 class="mb-4">Our Mission</h3>
-    <p>
-      At Back To School, we are dedicated to saving underfunded schools from closure and ensuring every child has access to quality education. 
-      Our passion is to create a better future by providing essential resources, learning opportunities, and community support.
-    </p>
-    <p>
-      We believe education is the foundation for success, and no child should be left behind due to financial hardships or lack of facilities. 
-      Our programs focus on helping schools with supplies, technology, and teacher training.
-    </p>
 
-    <h3 class="mt-5 mb-4">Our Vision</h3>
-    <p>
-      We envision a world where every child, regardless of their background, has the tools and support they need to succeed academically and personally. 
-      By collaborating with educators, parents, and communities, we strive to uplift schools and build lasting change.
-    </p>
-    <p>
-      Together, we can ensure that education remains accessible, inspiring, and transformative for generations to come.
-    </p>
-  </div>
+<!-- Mission Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Mission</h2>
+        <p class="text-center">
+            Our mission is to restore and strengthen educational opportunities for children in rural and underdeveloped areas. Many schools today lack basic infrastructure such as safe classrooms, clean water, and proper learning materials. By focusing on rebuilding these facilities, we create environments where children can thrive and learn safely. We aim to bridge the gap between potential and opportunity by ensuring students have access to the tools they need. From providing textbooks and uniforms to offering emotional support programs, we believe education is the most powerful way to break the cycle of poverty. Our mission is more than just charity—it’s about long-term change. Through community involvement and sustainable solutions, we ensure that every contribution creates a lasting difference.
+        </p>
+    </div>
+</section>
+
+<!-- Vision Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Vision</h2>
+        <p class="text-center">
+            We envision a world where every child, regardless of where they live, has the right to learn in a safe, welcoming, and inspiring environment. Our vision is rooted in equality, where quality education is not a privilege but a universal right. We aim to create a future where school dropouts are minimized, literacy rates improve, and communities grow stronger through educated generations. Our approach goes beyond just building schools—we build hope, confidence, and dreams. By working closely with local communities and volunteers, we strive to empower the next generation of leaders, thinkers, and changemakers. A child's environment shapes their future, and our vision is to make that environment one filled with opportunity and care. Together, we believe we can reshape education for the better.
+        </p>
+    </div>
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<!-- JS files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>

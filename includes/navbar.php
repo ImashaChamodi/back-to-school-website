@@ -21,23 +21,23 @@
         <li class="nav-item">
           <a href="javascript:void(0)" class="nav-link link dropdown-arrow">Our Team</a>
           <ul class="dm-align-2 hide-cursor">
-            <li><a href="team-flip.html">Meet the Team</a></li>
-            <li><a href="team-classic.html">Our Volunteers</a></li>
-            <li><a href="team-single.html">Advisors</a></li>
-            <li><a href="team-classic-half.html">Support Crew</a></li>
-            <li><a href="team-creative.html">Field Agents</a></li>
+            <li><a href="team-flip.php">Meet the Team</a></li>
+            <li><a href="team-volunteers.php">Our Volunteers</a></li>
+            <li><a href="team-single.php">Advisors</a></li>
+            <li><a href="team-classic-half.php">Support Crew</a></li>
+            <li><a href="team-creative.php">Field Agents</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
           <a href="javascript:void(0)" class="nav-link link dropdown-arrow">Gallery</a>
           <ul class="dm-align-2 hide-cursor">
-            <li><a href="parallax-portfolio.html">School Visits</a></li>
-            <li><a href="video-bg.html">Video Stories</a></li>
-            <li><a href="portfolio-creative.html">Before & After</a></li>
-            <li><a href="portfolio-minimal.html">Student Moments</a></li>
-            <li><a href="portfolio-single.html">Impact Showcase</a></li>
-            <li><a href="portfolio-three-column.html">All Projects</a></li>
+            <li><a href="parallax-portfolio.php">School Visits</a></li>
+            <li><a href="video-bg.php">Video Stories</a></li>
+            <li><a href="portfolio-creative.php">Before & After</a></li>
+            <li><a href="portfolio-minimal.php">Student Moments</a></li>
+            <li><a href="portfolio-single.php">Impact Showcase</a></li>
+            <li><a href="portfolio-three-column.php">All Projects</a></li>
           </ul>
         </li>
       </ul>
