@@ -1,3 +1,8 @@
+    
+  <?php
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
+   
    <!-- Header start -->
    <header class="multipage">
     <nav class="navbar navbar-top-default navbar-expand-lg static-nav transparent-bg center-logo">
@@ -8,10 +13,10 @@
     </a>
     <div id="menu" class="collapse navbar-collapse d-none d-lg-block mod-menu">
       <ul class="nav navbar-nav">
-        <li class="nav-item mega-menu active">
-          <a href="javascript:void(0)" class="nav-link link dropdown-arrow">Home</a>
-          <!-- Keep demo home versions here if you want -->
-        </li>
+      <li class="nav-item <?= ($current_page == 'index.php') ? 'active' : '' ?>">
+  <a href="index.php" class="nav-link link dropdown-arrow">Home</a>
+</li>
+
 
         <li class="nav-item">
   <a href="about.php" class="nav-link link dropdown-arrow">About Us</a>
@@ -23,7 +28,7 @@
           <ul class="dm-align-2 hide-cursor">
             <li><a href="team-flip.php">Meet the Team</a></li>
             <li><a href="team-volunteers.php">Our Volunteers</a></li>
-            <li><a href="team-single.php">Advisors</a></li>
+            <li><a href="team-advisors.php">Advisors</a></li>
             <li><a href="team-classic-half.php">Support Crew</a></li>
             <li><a href="team-creative.php">Field Agents</a></li>
           </ul>
@@ -46,9 +51,9 @@
         <li class="nav-item">
           <a href="javascript:void(0)" class="nav-link link dropdown-arrow">Donate</a>
           <ul class="dm-align-2 hide-cursor">
-            <li><a href="pricing-creative.html">Support a School</a></li>
-            <li><a href="pricing-elegant.html">Monthly Giving</a></li>
-            <li><a href="pricing-modern.html">Corporate Support</a></li>
+            <li><a href="pricing-creative.php">Support a School</a></li>
+            <li><a href="pricing-elegant.php">Monthly Giving</a></li>
+            <li><a href="pricing-modern.php">Corporate Support</a></li>
           </ul>
         </li>
 
@@ -60,9 +65,9 @@
         <li class="nav-item right">
           <a href="javascript:void(0)" class="nav-link link dropdown-arrow">Blog</a>
           <ul class="dm-align-2 hide-cursor">
-            <li><a href="blog.html">Latest News</a></li>
-            <li><a href="blog-masonry.html">Success Stories</a></li>
-            <li><a href="blog-detail.html">Education Insights</a></li>
+            <li><a href="blog.php">Latest News</a></li>
+            <li><a href="blog-masonry.php">Success Stories</a></li>
+            <li><a href="blog-detail.php">Education Insights</a></li>
           </ul>
         </li>
 
@@ -77,20 +82,7 @@
       </ul>
     </div>
 
-    <!-- side menu open button -->
-    <a class="menu_bars d-inline-block menu-bars-setting animated-wrap" id="sidemenu_toggle">
-      <div class="menu-lines animated-element">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </a>
-  </div>
-</nav>
 
 
-        <!-- Side Menu -->
-        
-        <!-- Side Menu -->
     </header>
     <!-- Header end -->
