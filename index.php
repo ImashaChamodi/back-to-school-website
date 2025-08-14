@@ -74,7 +74,7 @@ include 'includes/navbar.php';
                              data-transform_idle="o:1;"
                              data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
                              data-start="1600" data-splitin="none" data-splitout="none">
-                            <h2 class="color-white text-capitalize"> BACK TO SCHOOL</h2>
+                            <h2 class="color-white text-capitalize"> SAVE THE SCHOOL</h2>
                         </div>
                         <div class="tp-caption"
                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -82,7 +82,7 @@ include 'includes/navbar.php';
                              data-textalign="['center','center','center','center']"
                              data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;"
                              data-start="180" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                            <a href="javascript:void(0)" class="btn-setting btn-hvr-setting-main btn-summer-sky text-white">Donate Now
+                            <a href="current-donors.php" class="btn-setting btn-hvr-setting-main btn-summer-sky text-white">Donate Now
                                 <span class="btn-hvr-setting btn-hvr-black">
 						     <span class="btn-hvr-setting-inner">
 							 <span class="btn-hvr-effect"></span>
@@ -92,7 +92,7 @@ include 'includes/navbar.php';
                              </span>
                             </span>
                             </a>
-                            <a href="javascript:void(0)" class="btn-setting btn-hvr-setting-main btn-white">Join the Mission
+                            <a href="opa-about.php" class="btn-setting btn-hvr-setting-main btn-white">Join the Mission
                                 <span class="btn-hvr-setting btn-hvr-black">
 						     <span class="btn-hvr-setting-inner">
 							 <span class="btn-hvr-effect"></span>
@@ -111,15 +111,16 @@ include 'includes/navbar.php';
     </section>
     <!-- Main Section end -->
 
-    <!-- Features start -->
+<!-- Features start -->
 <section class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5>For a Brighter Tomorrow</h5>
-                    <h2>Why Donate to Save Our Schools?</h2>
-                    <p>Many rural schools are on the verge of permanent closure due to a lack of basic facilities. Your donation helps provide supplies, restore classrooms, and bring children back to safe learning spaces.</p>
+                    <h5>United for Our School’s Future</h5>
+                    <h2>Our Mission to Protect Kadanapitiya School</h2>
+                    <p style="text-align: justify;">With only 38 students, our school is at risk of closure due to government rules. 
+                    We work as one team to keep it alive by supporting students, improving facilities, and creating a future full of opportunities.</p>
                 </div>
             </div>
         </div>
@@ -127,40 +128,42 @@ include 'includes/navbar.php';
             <div class="col-lg-3 col-md-6 col-sm-12 p-md-0">
                 <div class="features-one blue equalheight">
                     <i class="ti ti-package"></i>
-                    <h5 class="text-capitalize">Provide Supplies</h5>
-                    <p>Support books, stationery, and uniforms for underprivileged children.</p>
+                    <h5 class="text-capitalize">Scholarships & School Kits</h5>
+                    <p style="text-align: justify;">
+                    Grade 1 newcomers get scholarships Monthly; all new and existing Grades 1–5 students receive school kits.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 p-md-0">
                 <div class="features-one equalheight">
                     <i class="ti ti-star color-summer-sky"></i>
-                    <h5>Restore Classrooms</h5>
-                    <p>Help renovate broken classrooms and create a safe environment.</p>
+                    <h5>Laptops for Grade 5 Achievers</h5>
+                    <p style="text-align: justify;">Students who pass Grade 5 are awarded a laptop computer .</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 p-md-0">
                 <div class="image hover-effect">
-                    <img src="images/featuresbox3.jpg" alt="image" class="equalheight">
+                    <img src="images/featuresbox3.jpg" alt="School Project" class="equalheight">
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 p-md-0 order-lg-3">
                 <div class="features-one blue equalheight">
                     <i class="ti ti-light-bulb"></i>
-                    <h5 class="text-capitalize">Encourage Attendance</h5>
-                    <p>Inspire students and parents to believe in education again.</p>
+                    <h5 class="text-capitalize">Skills & Leadership Education</h5>
+                    <p style="text-align: justify;">
+                    Build skills, leadership, and character through programs and future projects.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 p-md-0 order-lg-2">
                 <div class="features-one equalheight">
                     <i class="ti ti-archive color-summer-sky"></i>
-                    <h5 class="text-capitalize">Sustain Education</h5>
-                    <p>Keep schools running and ensure long-term educational impact.</p>
+                    <h5 class="text-capitalize">English Literacy Program</h5>
+                    <p style="text-align: justify;">Provide strong English language learning for students to prepare them for future.</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 p-md-0">
                 <div class="image hover-effect">
-                    <img src="images/featuresbox4.jpg" alt="image" class="equalheight">
+                    <img src="images/featuresbox4.jpg" alt="Education Support" class="equalheight">
                 </div>
             </div>
         </div>
@@ -205,9 +208,9 @@ include 'includes/navbar.php';
                     <div class="main-title m-0 text-md-start wow fadeIn" data-wow-delay="300ms">
                         <h5>People Behind the Vision</h5>
                         <h2 class="mb-2rem">Meet Our Core Team</h2>
-                        <p>These are the individuals working passionately to protect underprivileged schools from closure and ensure every child gets access to education through our donation program.</p>
+                        <p>These dedicated individuals work passionately to protect our school from closure and ensure every child has access to quality education through our donation program.</p>
 
-                        <a href="javascript:void(0)" class="mt-35px btn-setting btn-hvr-setting-main btn-summer-sky text-white btn-hvr">Learn More
+                        <a href="opa-bearers.php" class="mt-35px btn-setting btn-hvr-setting-main btn-summer-sky text-white btn-hvr">Learn More
                             <span class="btn-hvr-setting btn-hvr-black">
                               <span class="btn-hvr-setting-inner">
                                  <span class="btn-hvr-effect"></span>
@@ -309,7 +312,7 @@ include 'includes/navbar.php';
 
 
     <!-- Call to Action for Donation -->
-<section class="parallax-setting parallaxie parallax2">
+    <section class="parallax-setting parallaxie parallax2" style="background-image: url('images/ActionforDonation.jpeg'); background-size: cover; background-position: center;">
     <div class="bg-overlay bg-black opacity-4"></div>
     <div class="container text-center">
         <p class="color-white mb-10px font-18">Together, We Can Save Schools</p>
@@ -328,6 +331,7 @@ include 'includes/navbar.php';
 </section>
 
 
+
    <!-- Partners or Supported Schools -->
 <section>
     <div class="container">
@@ -335,9 +339,11 @@ include 'includes/navbar.php';
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
                     <h5>With the Support of Our Partners</h5>
-                    <h2>Schools & Organizations We've Helped</h2>
-                    <p>Thanks to your generosity, we are making an impact across multiple regions. Here are just a few schools and sponsors helping us restore hope in education.</p>
-                </div>
+                    <h2>Organizations That Have Supported Our School</h2>
+               <p>Thanks to the generosity of our supporters, our school has received valuable assistance to improve facilities, 
+                enhance learning, and create a better future for our students. Here are some of the organizations that have contributed
+                 to this transformation.</p>
+
             </div>
         </div>
         <div class="row">
