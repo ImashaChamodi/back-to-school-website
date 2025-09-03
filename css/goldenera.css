@@ -1,0 +1,80 @@
+/* =======================
+   General Styles
+======================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-light-custom {
+    background-color: #f1f6fb;
+}
+
+/* =======================
+   Golden Era Section
+======================= */
+.golden-era-section {
+    background: url('../images/Goldenera.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 0 100px 0; /* Top padding to avoid navbar overlap */
+}
+
+.golden-era-card {
+    background: #fff;
+    border-left: 6px solid #24c1dd;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 50px 40px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.golden-era-card h2 {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: #24c1dd;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.golden-era-card p {
+    text-align: justify;
+    text-justify: inter-word;  /* ensures proper justification */
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 991px) {
+    .golden-era-card {
+        padding: 35px 25px;
+    }
+
+    .golden-era-card h2 {
+        font-size: 2.5rem;
+    }
+
+    .golden-era-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .golden-era-card {
+        padding: 25px 15px;
+    }
+
+    .golden-era-card h2 {
+        font-size: 2rem;
+    }
+
+    .golden-era-card p {
+        font-size: 0.95rem;
+    }
+}

@@ -40,6 +40,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Custom Style CSS File -->
     <link id="stylesheet" rel="stylesheet" href="css/custom.css">
+     <!-- New Style CSS File -->
+     <link id="stylesheet" rel="stylesheet" href="css/newstyle.css">
+     <!--   goldeneraCSS File -->
+     <link id="stylesheet" rel="stylesheet" href="css/goldenera.css">
+
+     <link rel="stylesheet" href="css/officebearers.css">
+     <link rel="stylesheet" href="css/donors.css">
+     <link rel="stylesheet" href="css/volunteer.css">
+     <link rel="stylesheet" href="css/mission.css">
+     <link rel="stylesheet" href="css/scholordrive.css">
+     <link rel="stylesheet" href="css/english.css">
+    
+
+   
+     
+     
+
+   
 
    
 

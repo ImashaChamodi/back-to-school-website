@@ -1,0 +1,61 @@
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 991px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-card {
+        padding: 25px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+.history-card {
+    background: rgba(255,255,255,0.95);
+    border-left: 6px solid #24c1dd;
+    padding: 30px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.history-year {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #24c1dd;
+}
+.history-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.history-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+/* Responsive */
+@media(max-width:991px) {
+    .timeline-card, .timeline-card.left, .timeline-card.right { width:90%; left:5% !important; text-align:left !important; }
+    .timeline-card::after { left:-10px !important; right:auto !important; }
+}
+/* Past Principals */
+.principal-item {
+    border-left:4px solid #24c1dd;
+    padding-left:10px;
+    margin-bottom:10px;
+}

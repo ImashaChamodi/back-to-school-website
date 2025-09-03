@@ -1,0 +1,108 @@
+/* HERO SECTION */
+.hero-section {
+    min-height: 80vh;
+    background: url('../images/Volunteer.jpg') center/cover no-repeat;
+    overflow: hidden;
+    
+  }
+  
+  .hero-text-box {
+    display: inline-block;
+    background: rgba(0,0,0,0.65);
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text-box h1{
+    color: #24c1dd;
+    margin: 0;
+    
+  }
+  
+  .hero-subtitle {
+    max-width: 700px;
+    margin: auto;
+    color: #f8f9fa;
+  }
+  
+  .hero-btn {
+    border-radius: 50px;
+    padding: 15px 50px;
+  }
+  
+  /* SUPPORTING HANDS */
+  .why-donate-section {
+    background-color: #f1f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.why-donate-box {
+    background: #ffffff;
+    border-left: 6px solid #24c1dd;
+    padding: 3rem; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    text-align: center; /* Center everything inside */
+    max-width: 800px;
+    margin: auto;
+  
+}
+
+.why-donate-box h2 {
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+    text-align:center;
+}
+
+.why-donate-box .text-muted {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align:justify; /* Center content instead of justify */
+}
+  /* VOLUNTEERS LIST */
+  .volunteers-list {
+    padding: 60px 0;
+    position: relative;
+    background: url('../images/About_image.jpg') no-repeat center center/cover;
+  }
+  
+  .volunteers-list .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255,255,255,0.8);
+    z-index: 1;
+  }
+  
+  .volunteer-name {
+    color: #24c1dd;
+    font-weight: 600;
+  }
+  
+  .view-more-link {
+    color: #24c1dd;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  
+  /* VOLUNTEER FORM */
+  .volunteer-form {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .form-title {
+    color: #212529;
+  }
+  
+  .submit-btn {
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.1rem;
+  }
+  
