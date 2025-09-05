@@ -1,0 +1,87 @@
+.bd-history-section {
+    position: relative;
+    padding-top: 40px; /* Space for navbar */
+    padding-bottom: 80px;
+}
+.bd-history-bg {
+    background: url('../images/History.png') center/cover no-repeat fixed;
+    background-size: cover;
+    z-index: 1;
+}
+.bd-history-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Title Inside Card */
+.bd-history-title {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* History Card */
+.bd-history-card {
+    transition: all 0.3s ease;
+    padding: 40px;
+    border-left: 6px solid #24c1dd;
+    background: white;
+    border-radius: 20px;
+}
+.bd-history-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Justified text like Word */
+.bd-history-text p {
+    text-align: justify;        /* main justification */
+      /* justify the last line */
+    hyphens: auto;              /* allow word breaks for better alignment */
+    word-spacing: 0.05em;       /* tiny tweak to spacing */
+    letter-spacing: 0.02em;     /* optional, smooths justification */
+    line-height: 1.8;           /* comfortable reading */
+}
+
+/* PAST PRINCIPALS TIMELINE */
+.bd-principals-title {
+    font-size: 2.8rem;
+}
+.bd-timeline {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 20px;
+    border-left: 4px solid #24c1dd;
+}
+.bd-timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.bd-timeline-item .bd-timeline-dot {
+    position: absolute;
+    left: -12px;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background-color: #24c1dd;
+    border-radius: 50%;
+}
+.bd-timeline-item p {
+    margin: 0;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .bd-history-card{
+    padding: 20px !important;
+  }
+  .bd-history-title {
+    font-size: 3rem;
+  }
+  .bd-principals-title {
+    font-size: 2rem;
+  }
+}

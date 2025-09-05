@@ -1,68 +1,40 @@
-/* NAV BUFFER */
-.contact-nav-buffer {
-    height: 120px;
-    background: linear-gradient(to bottom, #000000, #24c1dd);
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Contact Section */
-  .contact-section {
-    padding: 4rem 1rem;
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    font-size: 2.5rem;
-    color: #24c1dd;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-section p {
-    font-size: 1.2rem;
-    max-width: 900px;
-    margin: 0 auto 3rem auto;
-    text-align: justify;
-  }
-  
-  /* Social Media Links Container */
-  .contact-social {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-  
-  /* Social Buttons */
-  .contact-social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #24c1dd;
-    color: #fff;
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  .contact-social a:hover {
-    transform: scale(1.1);
-    background-color: #000;
-  }
-  
-  /* Optional: Add spacing for small screens */
-  @media (max-width: 576px) {
-    .contact-social a {
-      width: 60px;
-      height: 60px;
-      font-size: 1.5rem;
-    }
-  }
-  
+.contact-section {
+  min-height: 100vh;
+}
+
+.contact-section .section-title {
+  color: #000000;
+}
+
+.contact-section .form-control.form-input {
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid #24c1dd;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-section .form-control.form-input:focus {
+  border-color: #24c1dd;
+  box-shadow: 0 0 5px rgba(36,193,221,0.5);
+}
+
+/* Buttons */
+.btn-setting {
+  position: relative;
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.btn-hvr-setting-main:hover {
+  transform: translateY(-3px);
+}
+
+.btn-summer-sky {
+  background: #24c1dd;
+  color: #fff;
+}

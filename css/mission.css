@@ -8,14 +8,15 @@ body {
   
   /* Navbar buffer */
   .nav-buffer {
-    background: linear-gradient(to bottom, #000000, #6fd6f0);
+    background-color: #000;
     height: 80px;
+    
   }
   
   /* Mission Section */
   .mission-section {
     padding: 3rem 0;
-    background-color: #000;
+    background: linear-gradient(to bottom, #000000, #6fd6f0);
     color: #fff;
   }
   

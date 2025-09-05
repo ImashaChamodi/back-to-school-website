@@ -1,0 +1,91 @@
+/* ============================
+   HERO SECTION
+============================ */
+.hero-modern-section {
+  position: relative;
+  min-height: 80vh;
+  background: url('../images/Donors.png') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.hero-modern-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+.text-bg-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0,0,0,0.35);
+  border-radius: 12px;
+  padding: 30px;
+}
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* ============================
+   VOLUNTEER CARDS
+============================ */
+.donor-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.donor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================
+   VIEW MORE / LESS LINK
+============================ */
+.view-more-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #24c1dd;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.view-more-link:hover {
+  color: #1a9cb8;
+}
+
+/* Hidden volunteers initially */
+.extra-volunteer {
+  display: none;
+}
+
+/* ============================
+   SECTION TITLES
+============================ */
+.donatetext {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}

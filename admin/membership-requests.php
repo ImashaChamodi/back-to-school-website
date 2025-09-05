@@ -3,29 +3,36 @@ include '../admin/auth-check.php';
 include "../config.php";
 include "admin-nav.php";
 
-// Handle AJAX request to update status
-if(isset($_POST['update_status']) && isset($_POST['id'])){
-    $id = intval($_POST['id']);
+// Handle status update
+if(isset($_POST['update_status_id'])){
+    $id = intval($_POST['update_status_id']);
     $stmt = $conn->prepare("UPDATE join_requests SET status='Processed' WHERE id=?");
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $stmt->close();
-    echo "success";
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+
+// Handle delete
+if(isset($_POST['delete_id'])){
+    $id = intval($_POST['delete_id']);
+    $stmt = $conn->prepare("DELETE FROM join_requests WHERE id=?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $stmt->close();
+    header("Location: ".$_SERVER['PHP_SELF']);
     exit;
 }
 
 // Fetch requests
 $result = $conn->query("SELECT * FROM join_requests ORDER BY submitted_at DESC");
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Membership Requests</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .status-btn { min-width: 100px; }
-    </style>
 </head>
 <body class="bg-light">
 <div class="container py-5">
@@ -40,6 +47,7 @@ $result = $conn->query("SELECT * FROM join_requests ORDER BY submitted_at DESC")
                     <th>Phone</th>
                     <th>Message</th>
                     <th>Status</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody class="text-center">
@@ -47,24 +55,43 @@ $result = $conn->query("SELECT * FROM join_requests ORDER BY submitted_at DESC")
             $count = 1;
             if ($result && $result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr id='row-".$row['id']."'>";
+                    echo "<tr>";
                     echo "<td>".$count++."</td>";
                     echo "<td>".htmlspecialchars($row['full_name'])."</td>";
                     echo "<td>".htmlspecialchars($row['email'])."</td>";
                     echo "<td>".htmlspecialchars($row['phone'])."</td>";
                     echo "<td>".htmlspecialchars($row['message'])."</td>";
-                    // Status Button
-                    if($row['status'] === 'Pending'){
-                        echo "<td>
-                            <button class='btn btn-warning status-btn' onclick='updateStatus(".$row['id'].")'>Pending</button>
-                        </td>";
-                    } else {
+
+                    // Clean status for comparison
+                    $status = strtolower(trim($row['status']));
+
+                    // Status badge
+                    if($status === 'pending'){
+                        echo "<td><span class='badge bg-warning text-dark'>Pending</span></td>";
+                    } elseif($status === 'processed') {
                         echo "<td><span class='badge bg-success'>Processed</span></td>";
+                    } else {
+                        echo "<td><span class='badge bg-secondary'>Unknown</span></td>";
                     }
+
+                    // Actions: Update status / Delete
+                    echo "<td class='d-flex justify-content-center gap-2'>";
+                    if($status === 'pending'){
+                        echo "<form method='post' style='display:inline-block;'>
+                                <input type='hidden' name='update_status_id' value='".$row['id']."'>
+                                <button type='submit' class='btn btn-sm btn-primary'>Mark Processed</button>
+                              </form>";
+                    }
+                    echo "<form method='post' style='display:inline-block;' onsubmit=\"return confirm('Are you sure want to delete this request?');\">
+                            <input type='hidden' name='delete_id' value='".$row['id']."'>
+                            <button type='submit' class='btn btn-sm btn-danger'>Delete</button>
+                          </form>";
+                    echo "</td>";
+
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan='6'>No requests found</td></tr>";
+                echo "<tr><td colspan='7'>No requests found</td></tr>";
             }
             ?>
             </tbody>
@@ -73,27 +100,5 @@ $result = $conn->query("SELECT * FROM join_requests ORDER BY submitted_at DESC")
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-function updateStatus(id){
-    if(confirm("Are you connected with the member who requested to join the alumni?")){
-        // Send AJAX request to update status
-        const formData = new FormData();
-        formData.append('update_status', 1);
-        formData.append('id', id);
-
-        fetch('<?= $_SERVER['PHP_SELF'] ?>', {
-            method: 'POST',
-            body: formData
-        }).then(res => res.text()).then(data => {
-            if(data === "success"){
-                const btn = document.querySelector("#row-" + id + " .status-btn");
-                btn.outerHTML = "<span class='badge bg-success'>Processed</span>";
-            } else {
-                alert("Something went wrong. Try again!");
-            }
-        });
-    }
-}
-</script>
 </body>
 </html>

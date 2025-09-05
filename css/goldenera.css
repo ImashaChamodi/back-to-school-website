@@ -1,80 +1,56 @@
-/* =======================
-   General Styles
-======================= */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+/* GOLDEN ERA SECTION */
+.bd-golden-era-section {
+  position: relative;
+  padding-top: 40px; /* Space for navbar */
+  padding-bottom: 80px;
+}
+.bd-golden-era-bg {
+  background: url("../images/Goldenera.png") center/cover no-repeat fixed;
+  background-size: cover;
+  z-index: 1;
+}
+.bd-golden-era-section .container {
+  position: relative;
+  z-index: 2;
 }
 
-.bg-light-custom {
-    background-color: #f1f6fb;
+/* Title Inside Card */
+.bd-golden-era-title {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
-/* =======================
-   Golden Era Section
-======================= */
-.golden-era-section {
-    background: url('../images/Goldenera.png') no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    padding: 120px 0 100px 0; /* Top padding to avoid navbar overlap */
+/* Golden Era Card */
+.bd-golden-era-card {
+  transition: all 0.3s ease;
+  padding: 40px;
+  border-left: 6px solid #24c1dd;
+  background: white;
+  border-radius: 20px;
+  text-align: justify;
+}
+.bd-golden-era-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-.golden-era-card {
-    background: #fff;
-    border-left: 6px solid #24c1dd;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    padding: 50px 40px;
-    border-radius: 10px;
-    line-height: 1.8;
+/* Quote */
+.bd-golden-era-quote {
+  font-size: 1.2rem;
+  color: #555;
+  border-left: 4px solid #24c1dd;
 }
 
-.golden-era-card h2 {
-    font-size: 3.3rem;
-    font-weight: bold;
-    color: #24c1dd;
-    margin-bottom: 30px;
-    text-align: center;
+/* Responsive */
+@media(max-width:768px){
+.bd-golden-era-card{
+  padding: 20px !important;
 }
-
-.golden-era-card p {
-    text-align: justify;
-    text-justify: inter-word;  /* ensures proper justification */
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+.bd-golden-era-title {
+  font-size: 3rem;
 }
-
-/* =======================
-   Responsive
-======================= */
-@media (max-width: 991px) {
-    .golden-era-card {
-        padding: 35px 25px;
-    }
-
-    .golden-era-card h2 {
-        font-size: 2.5rem;
-    }
-
-    .golden-era-card p {
-        font-size: 1rem;
-    }
+.bd-golden-era-quote {
+  font-size: 1rem;
 }
-
-@media (max-width: 576px) {
-    .golden-era-card {
-        padding: 25px 15px;
-    }
-
-    .golden-era-card h2 {
-        font-size: 2rem;
-    }
-
-    .golden-era-card p {
-        font-size: 0.95rem;
-    }
 }

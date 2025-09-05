@@ -1,42 +1,28 @@
-/* =======================
-   HERO SECTION
-======================= */
+/* HERO SECTION */
 .hero {
-    background: linear-gradient(to right, #24c1dd, #000000);
-    padding-top: 120px;
-    padding-bottom: 80px;
-    height: min-content;
+    background: linear-gradient(to right, #000000,#24c1dd );
+    color: white;
+    min-height: 100vh;
+    max-height: 200vh;
 }
 
 .hero h1 {
-    color: #fff;
-    margin-bottom: 1rem;
+    font-size: 4.2rem;
+    font-weight: 200;
 }
 
-.hero p.lead {
-    color: #f8f9fa;
-    margin-bottom: 1.5rem;
+.hero .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-
-
-
-/* IMAGE FRAME */
-.image-frame {
-    position: relative;
-    width: 420px;
-    height: 420px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 25% 75% 70% 30% / 40% 40% 60% 60%;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.5);
-    animation: morph 10s ease-in-out infinite;
-}
-
-.hero-img {
+/* Hero Image */
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .image-overlay {
@@ -45,66 +31,118 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(36,193,221,0.3), rgba(0,0,0,0.3));
-    mix-blend-mode: multiply;
+    background: rgba(0,0,0,0.15);
 }
 
-@keyframes morph {
-    0%, 100% { border-radius: 25% 75% 70% 30% / 40% 40% 60% 60%; }
-    50% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%; }
+/* ABOUT OPA SECTION */
+.opa-section {
+    position: relative;
+    padding: 40px 0;
 }
 
-/* =======================
-   ABOUT OPA SECTION
-======================= */
-.opa-section .opa-card {
-    background: #fff;
+.opa-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
     border-left: 6px solid #24c1dd;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    padding: 50px 40px;
-    border-radius: 10px;
-    line-height: 1.8;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
-.opa-section h2 {
-    font-size: 3rem;
-    font-weight: 500;
+.opa-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.opa-card h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.opa-section p {
-    text-align: justify;
-    text-justify: inter-word;
+.opa-card p {
     font-size: 1.05rem;
-    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
 }
 
-/* =======================
-   FORM SECTION
-======================= */
-#membership-form {
-    background-color: #f1f6fb;
-}
-
+/* MEMBERSHIP FORM */
 #membership-form h2 {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 300;
     color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #membership-form p {
-    font-size: 1rem;
-    color: #6c757d;
+    font-size: 1.05rem;
+    color: #666;
+}
+
+#membership-form .form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 #membership-form .form-control {
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
 }
 
-#membership-form button[type="submit"] {
+#membership-form textarea.form-control {
+    resize: vertical;
+}
+
+#membership-form button {
     margin-top: 10px;
 }
 
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
 
+/* Divider */
+.section-divider {
+    border: none;
+    border-top: 3px solid #24c1dd;
+    width: 80%;
+    margin: 50px auto;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .opa-card {
+        padding: 20px !important;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* General button sizing */
+.btn-setting {
+    
+    display: inline-block;          /* Prevent full-width stretching */
+    padding: 10px 25px;             /* Balanced padding */
+    font-size: 16px;
+    white-space: nowrap;            /* Prevent text from breaking into 2 lines */
+    max-width: 220px;               /* Prevent too long */
+    text-align:center;
+}
+
+/* Center form button */
+form .btn-setting {
+    display: inline-block;
+    margin: 0 auto;                 /* Centers inside form */
+}

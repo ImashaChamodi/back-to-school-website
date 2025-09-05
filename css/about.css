@@ -1,0 +1,124 @@
+/* Hero Section */
+.abd-hero-section {
+  position: relative;
+  background-image: url('../images/About.jpg'); /* your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay behind image */
+.abd-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 27, 27, 0.6); /* stronger black overlay for readability */
+  z-index: 1;
+}
+
+/* Container content above overlay */
+.abd-hero-section .container {
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+/* Black rectangle behind text */
+.abd-hero-text-bg {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.85); /* almost opaque black */
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* Hero text */
+.abd-hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.abd-hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* About Section */
+.abd-about-section {
+  background-color: #f1f6fb;
+  padding: 5rem 0;
+}
+
+.abd-about-box {
+  background: #ffffff;
+  border-left: 6px solid #24c1dd;
+  padding: 3rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.abd-about-title {
+  font-size: 3.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.abd-about-text {
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Staff Section */
+.staff-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.staff-img {
+  width: 200px; /* size of circle */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #24c1dd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staff-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.staff-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.staff-role {
+  font-size: 0.9rem;
+}
+
+h3.text-dark {
+  font-size: 2.5rem; /* Increase heading size */
+  font-weight: 300;  /* Make it bold */
+  letter-spacing: 1px; /* Optional: spacing between letters */
+}
+

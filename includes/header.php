@@ -13,8 +13,15 @@
 
     <title>Back To School </title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
+   
+    
+    
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    
+   
+
     <!-- Bootstrap CSS File -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -51,6 +58,10 @@
      <link rel="stylesheet" href="css/mission.css">
      <link rel="stylesheet" href="css/scholordrive.css">
      <link rel="stylesheet" href="css/english.css">
+     <link rel="stylesheet" href="css/about.css">
+     <link rel="stylesheet" href="css/history.css">
+     <link rel="stylesheet" href="css/contact.css">
+
     
 
    

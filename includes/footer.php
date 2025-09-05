@@ -34,8 +34,11 @@
                 </ul>
 
                 <p class="copyrights mt-2 mb-2">
-                    © 2023 Back to School. Made with love by <a href="javascript:void(0)">themesindustry</a>
-                </p>
+    © 2025 Back to School. Powered by 
+    <a href="https://codeone-x.com/" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #000000;">CodeOne-X</a>. 
+    All rights reserved.
+</p>
+
             </div>
         </div>
     </div>

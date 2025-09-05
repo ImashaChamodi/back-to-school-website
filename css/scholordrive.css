@@ -1,105 +1,125 @@
+/* =======================
+   Scholar.css
+   Custom Styles for Scholar Drive
+========================= */
+
 /* NAV BUFFER with gradient */
 .scholar-nav-buffer {
-    height: 120px;
-    background: linear-gradient(to bottom, #000000, #24c1dd);
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Scholar Drive Section */
-  .scholar-section {
-    padding: 0.5rem 0 3rem;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .scholar-section-title {
-    color: #24c1dd;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-  }
-  
-  .scholar-section-text {
-    text-align: justify;
-    font-size: 1.25rem;
-    color: #fff;
-  }
-  
-  /* Actions Section */
-  .scholar-actions-section {
-    padding: 3rem 0;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  
-  .scholar-section-heading {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #000;
-  }
-  
-  .scholar-action-item {
-    margin-bottom: 2rem;
-  }
-  
-  .scholar-action-item h4 {
-    font-weight: 700;
-    color: #24c1dd;
-  }
-  
-  .scholar-action-item p {
-    text-align: justify;
-  }
-  
-  /* Scholar Image */
-  .scholar-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  /* Roadmap Section */
-  .scholar-roadmap-section {
-    padding: 3rem 0;
-    background-color: #e9ecef;
-    color: #333;
-  }
-  
-  .scholar-roadmap-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  .scholar-roadmap-card {
-    background: #fff;
-    border-left: 6px solid #24c1dd;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .scholar-roadmap-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  }
-  
-  .scholar-card-year {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #24c1dd;
-    margin-bottom: 0.5rem;
-  }
-  
-  .scholar-card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
+  background-color: #000;
+  height: 80px;
+}
+
+/* Scholar Drive Section */
+.scholar-section {
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, #000000, #6fd6f0);
+  color: #fff;
+}
+
+.scholar-section-title {
+  color: #24c1dd;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.scholar-section-text {
+  text-align: justify;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+/* Strategic Actions Section */
+.scholar-actions-section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.scholar-actions-image-wrapper {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.scholar-actions-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.scholar-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.scholar-action-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 6px solid #24c1dd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.scholar-action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.scholar-action-card h4 {
+  color: #24c1dd;
+  font-weight: 3e00;
+  margin-bottom: 0.75rem;
+}
+
+.scholar-action-card p {
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+}
+
+/* Roadmap Section */
+.scholar-roadmap-section {
+  padding: 3rem 0;
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.scholar-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.scholar-roadmap-card {
+  background: #fff;
+  border-left: 6px  #24c1dd;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.scholar-roadmap-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.scholar-card-year {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #24c1dd;
+  margin-bottom: 0.5rem;
+}
+
+.scholar-card-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
