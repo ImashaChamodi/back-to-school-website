@@ -103,7 +103,7 @@ if ($result && $result->num_rows > 0) {
   <section id="volunteers" class="py-5 bg-white">
     <div class="container">
       <div class="main-title">
-        <h2>Our Honoured Supporting Hands</h2>
+        <h2>Our Honoured Supporters</h2>
       </div>
 
 
