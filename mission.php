@@ -30,7 +30,7 @@ include 'includes/navbar.php';
   <div class="container text-center">
     <h2 class="section-title">Mission 100</h2>
     <p class="section-text">
-      Mission 100 is a key initiative aimed at increasing student enrollment at Kadanapitiya Junior School
+      Mission 100 is a key initiative aimed at increasing student enrollment at Kadanapitiya Kanishta Vidyalaya
       to over 100 by the year 2030. Rural schools with fewer than 100 students face the risk of permanent
       closure due to government policies, and our school currently falls below this threshold. Mission 100
       focuses on attracting more children from the village and surrounding areas, ensuring that the school
@@ -43,7 +43,10 @@ include 'includes/navbar.php';
 <!-- STRATEGIC ACTIONS -->
 <section class="actions-section">
   <div class="container">
-    <h2 class="donatetext">Our Strategic Actions</h2>
+    <div class="main-title">
+      <h2>Our Strategic Actions</h2>
+    </div>
+
 
     <!-- Block 1 -->
     <div class="row align-items-center mb-5">
@@ -94,50 +97,48 @@ include 'includes/navbar.php';
 <!-- ROADMAP SECTION -->
 <section class="roadmap-section">
   <div class="container">
-    <h2 class="donatetext">Roadmap to 100 Students</h2>
+    <div class="main-title">
+      <h2>Roadmap to 100 Students</h2>
+    </div>
+
 
     <div class="roadmap-steps">
 
       <div class="roadmap-card">
-        <div class="step-number">2025</div>
-        <h4>10 New Admissions</h4>
-        <p>Run a “Back to School” campaign, distribute free school kits, and host an Open Day to showcase quality teaching and activities.</p>
-      </div>
-
-      <div class="roadmap-card">
         <div class="step-number">2026</div>
-        <h4>15 New Admissions</h4>
-        <p>Provide scholarships for new students, launch free English support classes, and introduce after-school programs to enhance learning.</p>
+        <h4>10 New Admissions</h4>
+        <p>Start with awareness campaigns in the village, distribute school kits, and provide scholarships to attract the first group of students.</p>
       </div>
 
       <div class="roadmap-card">
         <div class="step-number">2027</div>
-        <h4>20 New Admissions</h4>
-        <p>Organize free seminars, leadership workshops, and community engagement activities to strengthen student and parent interest.</p>
+        <h4>15 New Admissions</h4>
+        <p>Introduce free English support classes, strengthen teaching quality, and build trust among parents for steady enrollment growth.</p>
       </div>
 
       <div class="roadmap-card">
         <div class="step-number">2028</div>
         <h4>20 New Admissions</h4>
-        <p>Reward top-performing students with laptops, highlight alumni success stories, and maintain high academic standards to build parent trust.</p>
+        <p>Promote alumni success stories, reward top-performing students, and expand extracurricular activities to attract more families.</p>
       </div>
 
       <div class="roadmap-card">
         <div class="step-number">2029</div>
-        <h4>15 New Admissions</h4>
-        <p>Boost participation in sports, cultural programs, and extracurricular activities, promoting holistic development and school recognition.</p>
+        <h4>25 New Admissions</h4>
+        <p>Organize leadership workshops, sports tournaments, and cultural events to increase visibility and reputation in the region.</p>
       </div>
 
       <div class="roadmap-card">
         <div class="step-number">2030</div>
-        <h4>Goal Achieved – 100 Students</h4>
-        <p>Following this roadmap, Kadanapitiya Junior School will reach 100 students, offering scholarships, quality education, and enriching programs for a sustainable future.</p>
+        <h4>30 New Admissions – Goal Achieved</h4>
+        <p>With stronger reputation and better facilities, 30 new students join in 2030, achieving the milestone of 100 students and securing the school’s future.</p>
       </div>
-
 
     </div>
   </div>
 </section>
+
+
 
 <?php include 'includes/footer.php'; ?>
 

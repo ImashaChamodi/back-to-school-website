@@ -69,39 +69,64 @@
     color: #333;
 }
 
-/* MEMBERSHIP FORM */
-#membership-form h2 {
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: #000000;
-    margin-bottom: 20px;
+.membership-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 40px auto;
+  }
+  
+  .membership-form h2 {
     text-align: center;
-}
-
-#membership-form p {
-    font-size: 1.05rem;
-    color: #666;
-}
-
-#membership-form .form-label {
-    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .membership-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .membership-form label {
+    display: block;
     margin-bottom: 6px;
-}
-
-#membership-form .form-control {
-    border-radius: 10px;
-    padding: 12px;
-    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .membership-form input,
+  .membership-form select,
+  .membership-form textarea {
+    width: 100%;
+    padding: 10px 12px;
     border: 1px solid #ccc;
-}
-
-#membership-form textarea.form-control {
-    resize: vertical;
-}
-
-#membership-form button {
-    margin-top: 10px;
-}
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .membership-form button {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .membership-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* plugin specific override */
+  .iti {
+    width: 100%;
+  }
+  
 
 /* Alerts */
 .alert {

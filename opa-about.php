@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start p-5">
                     <h1 class="display-5 fw-bold text-white mb-3">Welcome Past Pupils</h1>
                     <p class="lead text-light mb-4">
-                        Join our alumni network and continue the legacy of Kadanapitiya Junior School.
+                        Join our alumni network and continue the legacy of Kadanapitiya Kanishta Vidyalaya.
                         Together, we can support the next generation and keep our school alive.
                     </p>
                     <a href="#membership-form"
@@ -114,7 +114,10 @@ if (isset($_POST['submit'])) {
     <section id="membership-form" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2>Join Our Team</h2>
+                <div class="main-title">
+                    <h2>Join Our Team</h2>
+                </div>
+
                 <p class="text-muted">Fill in the form below to become a new member.</p>
             </div>
 
@@ -123,41 +126,69 @@ if (isset($_POST['submit'])) {
                     <form action="" method="post" class="p-4 bg-white shadow rounded-4">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Full Name</label>
-                            <input type="text" name="name" id="name" class="form-control form-control-lg" required>
+                            <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="John Doe" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label fw-semibold">Email Address</label>
-                            <input type="email" name="email" id="email" class="form-control form-control-lg" required>
+                            <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="example@gmail.com" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="phone" class="form-label fw-semibold">Phone Number</label>
-                            <input type="text" name="phone" id="phone" class="form-control form-control-lg">
+                            <input type="tel" name="phone" id="phone" class="form-control form-control-lg" placeholder="771234567" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="message" class="form-label fw-semibold">Additional Information</label>
-                            <textarea name="message" id="message" class="form-control form-control-lg" rows="4"></textarea>
+                            <textarea name="message" id="message" class="form-control form-control-lg" rows="4" placeholder="Write any additional details here..."></textarea>
                         </div>
 
-                        <button type="submit" name="submit"
-                            class="btn-setting btn-hvr-setting-main btn-summer-sky text-white w-100">
-                            Submit Request
-                            <span class="btn-hvr-setting btn-hvr-black">
-                                <span class="btn-hvr-setting-inner">
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
+                        <div class="text-center">
+                            <button type="submit" name="submit"
+                                class="btn-setting btn-hvr-setting-main btn-summer-sky text-white">
+                                Submit
+                                <span class="btn-hvr-setting btn-hvr-black">
+                                    <span class="btn-hvr-setting-inner">
+                                        <span class="btn-hvr-effect"></span>
+                                        <span class="btn-hvr-effect"></span>
+                                        <span class="btn-hvr-effect"></span>
+                                        <span class="btn-hvr-effect"></span>
+                                    </span>
                                 </span>
-                            </span>
-                        </button>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Country Code & Flags Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+    <script>
+        const phoneInput = document.querySelector("#phone");
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "auto",
+            geoIpLookup: function(callback) {
+                fetch("https://ipapi.co/json")
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback("us"));
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+        });
+
+        // Ensure full number (with country code) is submitted
+        const form = phoneInput.closest("form");
+        form.addEventListener("submit", function() {
+            phoneInput.value = iti.getNumber();
+        });
+    </script>
+
+
 
     <?php include 'includes/footer.php'; ?>
 

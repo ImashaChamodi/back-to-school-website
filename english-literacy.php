@@ -39,7 +39,10 @@ include 'includes/navbar.php';
 <!-- STRATEGIC ACTIONS SECTION -->
 <section class="english-strategies-section">
   <div class="container">
-    <h2 class="donatetext">Our Strategic Actions</h2>
+    <div class="main-title">
+      <h2>Our Strategic Actions</h2>
+    </div>
+
 
     <div class="english-strategies-grid">
       <div class="english-strategy-card">
@@ -83,13 +86,16 @@ include 'includes/navbar.php';
 <!-- HORIZONTAL ROADMAP -->
 <section class="english-roadmap-section">
   <div class="container">
-    <h2 class="donatetext">Roadmap to 60% English Medium Transition</h2>
+    <div class="main-title">
+      <h2>Roadmap to 60% English Medium Transition</h2>
+    </div>
+
+
     <div class="english-roadmap-container">
       <div class="english-roadmap-line"></div>
 
       <?php
       $roadmap_steps = [
-        ["2025", "Early Language Exposure", "Introduce interactive English activities including storytelling, reading sessions, and vocabulary exercises to build a strong foundation."],
         ["2026", "Structured Skill Development", "Focus on systematic development of reading, writing, listening, and speaking skills through guided lessons and practical exercises."],
         ["2027", "Extra Coaching & Practice", "Provide after-school English clubs, study sessions, and interactive practice programs to reinforce classroom learning."],
         ["2028", "Seminars, Mock Activities & Motivation", "Conduct motivational seminars, language games, and mock reading/writing exercises to track progress and build confidence."],
@@ -111,6 +117,7 @@ include 'includes/navbar.php';
     </div>
   </div>
 </section>
+
 
 <?php include 'includes/footer.php'; ?>
 <script src="js/jquery-3.3.1.min.js"></script>

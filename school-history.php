@@ -37,7 +37,11 @@ include 'includes/navbar.php';
                     <div class="bd-history-card bg-white rounded-4 shadow-lg p-4 p-lg-5 border-start border-5 border-lightblue">
 
                         <!-- Title Inside Card -->
-                        <h2 class="donatetext">Our History</h2>
+                        
+<div class="main-title">
+    <h2>Our History</h2>
+</div>
+
 
                         <!-- History Text -->
                         <div class="bd-history-text">
@@ -60,14 +64,15 @@ include 'includes/navbar.php';
     <!-- PAST PRINCIPALS SECTION -->
     <section class="bd-principals-section py-5 bg-light-custom">
         <div class="container">
-            <h2 class="donatetext">Past Principals</h2>
-
+        <div class="main-title">
+            <h2 >Past Principals</h2>
+        </div>
             <div class="bd-timeline">
                 <?php
                 $principals = [
                     "Pandita Piyadasa Rama Chandra – Founding Principal (~1921)",
                     "S.P. Karyawasam D.E. Weera – Principal (before 1926)",
-                    "H.S. Maithri Wardhana – Principal at government takeover (1926)",
+                    "H.S. Maithreewardhana – Principal at government takeover (1926)",
                     "W.D.S. Dharmawardhana – (Dates not specified)",
                     "H.D.J. Samarasinghe – (Dates not specified)",
                     "D.S. Gunawardhana – (Dates not specified)",

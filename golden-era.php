@@ -38,13 +38,16 @@ include 'includes/navbar.php';
                 <div class="bd-golden-era-card bg-white rounded-4 shadow-lg p-4 p-lg-5 border-start border-5 border-lightblue">
 
                     <!-- Title Inside Card -->
-                    <h2 class="donatetext">The Golden Era</h2>
+                    <div class="main-title">
+                        <h2>The Golden Era</h2>
+                    </div>
+
 
                     <!-- Updated Golden Era Text -->
 
 
                     <p>
-                        Kadnapitiya Primary School, established in 1926 under the leadership of its first principal and organizer, Mr. H.S. Meethreewardhana, and handed over to the government, is among one of the oldest schools in the Kalutara District.
+                        Kadnapitiya Kanishta Vidyalaya, established in 1920 under the leadership of its first principal and organizer, Mr. H.S. Maithreewardhana, and handed over to the government, is among one of the oldest schools in the Kalutara District.
                     </p>
 
                     <p>

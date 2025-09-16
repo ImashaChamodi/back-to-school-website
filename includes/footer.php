@@ -6,39 +6,38 @@
                 <ul class="footer-icons mb-4">
                     <!-- Facebook -->
                     <li>
-                        <a href="https://facebook.com" target="_blank" class="wow fadeInUp facebook">
+                        <a href="https://www.facebook.com/backtoschool.edu.lk" target="_blank" class="wow fadeInUp facebook" rel="noopener noreferrer">
                             <i class="ti ti-facebook"></i>
                         </a>
                     </li>
 
                     <!-- YouTube -->
                     <li>
-                        <a href="https://youtube.com" target="_blank" class="wow fadeInDown youtube" style="--hover-color:#FF0000;">
+                        <a href="https://www.youtube.com/@backtoschooledulk" target="_blank" class="wow fadeInDown youtube" style="--hover-color:#FF0000;" rel="noopener noreferrer">
                             <i class="ti ti-youtube"></i>
                         </a>
                     </li>
 
                     <!-- Mail (Outlook icon for compatibility) -->
                     <li>
-                        <a href="mailto:hello@backtoschool.edi.lk" class="wow fadeInUp mail" style="--hover-color:#0078D4;">
+                        <a href="mailto:hello@backtoschool.edu.lk" class="wow fadeInUp mail" style="--hover-color:#0078D4;">
                             <i class="ti ti-email"></i>
                         </a>
                     </li>
 
                     <!-- LinkedIn -->
                     <li>
-                        <a href="https://linkedin.com" target="_blank" class="wow fadeInDown linkedin">
+                        <a href="https://linkedin.com/company/backtoschooledulk/" target="_blank" class="wow fadeInDown linkedin" rel="noopener noreferrer">
                             <i class="ti ti-linkedin"></i>
                         </a>
                     </li>
                 </ul>
 
                 <p class="copyrights mt-2 mb-2">
-    © 2025 Back to School. Powered by 
-    <a href="https://codeone-x.com/" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #000000;">CodeOne-X</a>. 
-    All rights reserved.
-</p>
-
+                    © 2025 Back to School. Powered by 
+                    <a href="https://codeone-x.com/" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #000000;">CodeOne-X</a>. 
+                    All rights reserved.
+                </p>
             </div>
         </div>
     </div>

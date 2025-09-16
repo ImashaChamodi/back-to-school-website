@@ -22,7 +22,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">History</a>
             <ul class="dropdown-menu">
-              <li><a href="school-history" class="dropdown-item">History of the School</a></li>
+              <li><a href="school-history" class="dropdown-item"> School</a></li>
               <li><a href="golden-era" class="dropdown-item">Golden Era</a></li>
               <li><a href="previous-scholars" class="dropdown-item">Previous Scholars</a></li>
             </ul>
@@ -31,8 +31,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Alumni</a>
             <ul class="dropdown-menu">
-              <li><a href="opa-about" class="dropdown-item">About the OPA</a></li>
-              <li><a href="opa-bearers" class="dropdown-item">Office Bearers</a></li>
+              <li><a href="opa-about" class="dropdown-item">OPA</a></li>
+              <li><a href="opa-bearers.php" class="dropdown-item">Office Bearers</a></li>
             </ul>
           </li>
 
@@ -45,13 +45,13 @@ $current_page = basename($_SERVER['PHP_SELF']);
           </li>
 
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contributors</a>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donors</a>
             <ul class="dropdown-menu">
               <li><a href="current-donors" class="dropdown-item">School Benefactors</a></li>
               <li><a href="current-volenteer" class="dropdown-item">Supporting Hands</a></li>
             </ul>
           </li>
-
+  
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
             <ul class="dropdown-menu">
@@ -62,7 +62,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
           </li>
 
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oversight</a>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Transparency</a>
             <ul class="dropdown-menu">
               <li><a href="board.php" class="dropdown-item">The Board</a></li>
               <li><a href="auditor-reports" class="dropdown-item">Auditor Reports</a></li>
@@ -101,15 +101,15 @@ $current_page = basename($_SERVER['PHP_SELF']);
           ['title'=>'Home','link'=>'index.php','subtitles'=>[]],
           ['title'=>'About Us','link'=>'about.php','subtitles'=>[]],
           ['title'=>'History','link'=>'','subtitles'=>[
-              ['title'=>'History of the School','link'=>'school-history.php'],
+              ['title'=>'School','link'=>'school-history.php'],
               ['title'=>'Golden Era','link'=>'golden-era.php'],
               ['title'=>'Previous Scholars','link'=>'previous-scholars.php']
           ]],
           ['title'=>'Alumni','link'=>'','subtitles'=>[
-              ['title'=>'About the OPA','link'=>'opa-about.php'],
+              ['title'=>'OPA','link'=>'opa-about.php'],
               ['title'=>'Office Bearers','link'=>'opa-bearers.php']
           ]],
-          ['title'=>'Contributors','link'=>'','subtitles'=>[
+          ['title'=>'Donors','link'=>'','subtitles'=>[
               ['title'=>'School Benefactors','link'=>'current-donors.php'],
               ['title'=>'Supporting Hands','link'=>'current-volenteer.php']
           ]],
@@ -118,7 +118,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
               ['title'=>'Scholar Drive','link'=>'scholar-drive.php'],
               ['title'=>'English Literacy','link'=>'english-literacy.php']
           ]],
-          ['title'=>'Oversight','link'=>'','subtitles'=>[
+          ['title'=>'Trancparency','link'=>'','subtitles'=>[
               ['title'=>'The Board','link'=>'board.php'],
               ['title'=>'Auditor Reports','link'=>'auditor-reports.php'],
               ['title'=>'Annual Reports','link'=>'annual-reports.php']

@@ -4,7 +4,6 @@
     <title>Back To School Admin Panel</title>
 
     <!-- Favicon -->
-
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <!-- Bootstrap CSS -->
@@ -12,7 +11,6 @@
 </head>
 
 <body>
-    
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="dashboard.php">Back To School Admin Panel</a>
@@ -28,31 +26,27 @@
                 ?>
                 
                 <li class="nav-item">
-                    <a class="nav-link <?= ($current == 'donors.php') ? 'active' : '' ?>" 
-                       href="donors">Donations</a>
+                    <a class="nav-link <?= ($current == 'donors.php') ? 'active' : '' ?>" href="donors.php">Donations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($current == 'volunteers.php') ? 'active' : '' ?>" href="volunteers.php">Volunteers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($current == 'membership-requests.php') ? 'active' : '' ?>" href="membership-requests.php">Membership Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($current == 'scholar-add.php') ? 'active' : '' ?>" href="scholar-add.php">Scholar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($current == 'manage_office.php') ? 'active' : '' ?>" href="manage_office.php">Office Bearers</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link <?= ($current == 'volunteers.php') ? 'active' : '' ?>" 
-                       href="volunteers">Volunteers</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link <?= ($current == 'membership-requests.php') ? 'active' : '' ?>" 
-                       href="membership-requests">Membership Requests</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link <?= ($current == 'scholar-add.php') ? 'active' : '' ?>" 
-                       href="scholar-add">Scholar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= ($current == 'contact_messages.php') ? 'active' : '' ?>" 
-                       href="contact_messages">Messages</a>
+                    <a class="nav-link <?= ($current == 'contact_messages.php') ? 'active' : '' ?>" href="contact_messages.php">Messages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-danger <?= ($current == 'logout.php') ? 'active' : '' ?>" 
-                       href="logout">Logout</a>
+                    <a class="nav-link text-danger <?= ($current == 'logout.php') ? 'active' : '' ?>" href="logout.php">Logout</a>
                 </li>
             </ul>
         </div>

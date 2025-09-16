@@ -6900,6 +6900,66 @@ background-attachment: inherit;
     color: #ddd !important;
   }
 
-  
+  /* ---------- Team Section Styles ---------- */
+
+.team-classic .item {
+    display: flex;
+    justify-content: center;
+}
+
+.team-card {
+    width: 250px;          /* fixed card width */
+    height: 350px;         /* fixed card height */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Image container */
+.team-image {
+    width: 100%;
+    height: 70%;           /* image area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* show entire image without cropping */
+    object-position: center;
+}
+
+/* Inner content card */
+.team-info {
+    width: 90%;
+    height: 30%;           /* remaining card height */
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.team-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.team-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
    
   

@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
 
-    
+
     <div style="height: 1in; background: linear-gradient(to bottom, #000000, #808080);"></div>
 
 

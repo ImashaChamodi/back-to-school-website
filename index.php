@@ -3,6 +3,14 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'includes/header.php';
 include 'includes/navbar.php';
+include 'config.php';
+
+
+// Fetch Office Bearers (President, Secretary, Treasurer)
+$officeResult = $conn->query("
+    SELECT * FROM office_bearers
+    ORDER BY FIELD(role,'President','Secretary','Treasurer'), id ASC
+");
 ?>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
@@ -129,14 +137,14 @@ include 'includes/navbar.php';
                     <div class="main-title wow fadeIn" data-wow-delay="300ms">
 
                         <h5>Our School Is At Risk</h5>
-                        <h2>Help Save Kadanapitiya Junior School</h2>
+                        <h2>Help Save Kadanapitiya Kanishta Vidyalaya</h2>
 
                         <p class="text-justify">
-                            Today, fewer than 50 students attend Kadanapitiya Junior School. Enrollment has drastically decreased over the years due to population shifts, urban migration, and changing government regulations. Without immediate support, the school risks closure, leaving the children of this village without accessible education.
+                            Today, fewer than 50 students attend Kadanapitiya Kanishta Vidyalaya. Enrollment has drastically decreased over the years due to population shifts, urban migration, and changing government regulations. Without immediate support, the school risks closure, leaving the children of this village without accessible education.
                         </p>
 
                         <p class="text-justify">
-                            Once the pride of this region, Kadanapitiya Junior School has educated generations of students. Its legacy is one of academic excellence, cultural events, and a nurturing environment where children grew into responsible citizens. Closing this school would erase a vital part of the community’s heritage.
+                            Once the pride of this region, Kadanapitiya Kanishta Vidyalaya has educated generations of students. Its legacy is one of academic excellence, cultural events, and a nurturing environment where children grew into responsible citizens. Closing this school would erase a vital part of the community’s heritage.
                         </p>
 
                         <p class="text-justify">
@@ -144,7 +152,7 @@ include 'includes/navbar.php';
                         </p>
 
                         <p class="text-justify fw-bold text-primary">
-                            We urgently need your support. Donations, volunteering, or spreading the word can make a real difference. By acting now, we can preserve the legacy of Kadanapitiya Junior School and secure a brighter future for the children of our village.
+                            We urgently need your support. Donations, volunteering, or spreading the word can make a real difference. By acting now, we can preserve the legacy of Kadanapitiya Kanishta Vidyalaya and secure a brighter future for the children of our village.
                         </p>
 
                     </div>
@@ -284,86 +292,49 @@ include 'includes/navbar.php';
 
 
 
-    <!-- Team start -->
-    <section class="bg-light-gray">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left content block -->
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-xs-5">
-                    <div class="team-classic-half d-inline-block">
-                        <div class="main-title m-0 text-md-start wow fadeIn" data-wow-delay="300ms">
-                            <h5>People Behind the Vision</h5>
-                            <h2 class="mb-2rem">Meet Our Core Team</h2>
-                            <p>These dedicated individuals work passionately to protect our school from closure and ensure every child has access to quality education through our donation program.</p>
+<section class="bg-light-gray py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left content -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                <div class="main-title text-md-start">
+                    <h5>People Behind the Vision</h5>
+                    <h2 class="mb-4">Meet Our Core Team</h2>
+                    <p>These dedicated individuals work passionately to protect our school and ensure every child has access to quality education.</p>
+                </div>
+            </div>
 
-
-                            <span class="btn-hvr-setting btn-hvr-black">
-                                <span class="btn-hvr-setting-inner">
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
-                                    <span class="btn-hvr-effect"></span>
-                                </span>
-                            </span>
-                            </a>
+            <!-- Right carousel -->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="team-classic owl-carousel">
+                    <?php
+                    if($officeResult->num_rows > 0){
+                        while($row = $officeResult->fetch_assoc()){
+                            $img  = $row['image'] ?? 'images/default.png';
+                            $name = $row['name'];
+                            $role = $row['role'];
+                    ?>
+                    <div class="item">
+                        <div class="team-card">
+                            <div class="team-image">
+                                <img src="<?= htmlspecialchars($img); ?>" alt="<?= htmlspecialchars($name); ?>">
+                            </div>
+                            <div class="team-info">
+                                <h4><?= htmlspecialchars($name); ?></h4>
+                                <p><?= htmlspecialchars($role); ?></p>
+                            </div>
                         </div>
                     </div>
+                    <?php
+                        }
+                    }
+                    ?>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <!-- Right team carousel -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="team-classic owl-carousel wow fadeInUp">
-
-                        <!-- Member 1 -->
-                        <div class="item">
-                            <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
-                                <div class="image" style="width:100%; height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;">
-                                    <img src="images/President.png" alt="team" style="width:100%; height:65%; object-fit:contain; object-position:center;">
-                                </div>
-                                <div class="team-classic-content">
-                                    <h4 class="color-black fw-normal m-0 text-capitalize">Janaki Hill</h4>
-                                    <p class="color-light-grey fw-light font-16 text-capitalize">President</p>
-                                    <span class="hr-line mt-3 mb-2"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Member 2 -->
-                        <div class="item">
-                            <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
-                                <div class="image" style="width:100%; height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;">
-                                    <img src="images/Secretary.png" alt="team" style="width:100%; height:70%; object-fit:contain; object-position:center;">
-                                </div>
-                                <div class="team-classic-content">
-                                    <h4 class="color-black fw-normal m-0 text-capitalize">Pushpa Damayanthi</h4>
-                                    <p class="color-light-grey fw-light font-16 text-capitalize">Secretary</p>
-                                    <span class="hr-line mt-3 mb-2"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Member 3 -->
-                        <div class="item">
-                            <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
-                                <div class="image" style="width:100%; height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;">
-                                    <img src="images/Treasurer.jpg" alt="team" style="width:100%; height:100%; object-fit:contain; object-position:center;">
-                                </div>
-                                <div class="team-classic-content">
-                                    <h4 class="color-black fw-normal m-0 text-capitalize">Asanga Raigama</h4>
-                                    <p class="color-light-grey fw-light font-16 text-capitalize">Treasurer</p>
-                                    <span class="hr-line mt-3 mb-2"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Add more if needed -->
-
-    </section>
-    <!-- Team ends -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>

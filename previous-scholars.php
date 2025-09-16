@@ -6,11 +6,13 @@ include 'includes/header.php';
 include 'includes/navbar.php';
 include 'config.php';
 
-// Fetch previous scholars
-$result = $conn->query("SELECT * FROM previous_scholars ORDER BY period_from ASC");
+// Fetch scholarship students grouped by year
+$result = $conn->query("SELECT * FROM scholarship_students ORDER BY year DESC, marks DESC");
+$students = [];
+while ($row = $result->fetch_assoc()) {
+  $students[$row['year']][] = $row;
+}
 ?>
-
-
 
 <!-- Loader -->
 <div class="loader" id="loader-fade">
@@ -34,12 +36,11 @@ $result = $conn->query("SELECT * FROM previous_scholars ORDER BY period_from ASC
   <div class="container text-center hero-content">
     <h1 class="hero-title">Previous Scholars</h1>
     <p class="hero-subtitle mx-auto">
-      Celebrating the journey of our past pupils who carried knowledge, discipline, and service into the world.
-      Their success stories inspire the next generation to dream big and achieve greater heights.
+      Celebrating the achievements of our students who excelled in academics and the Grade 5 Scholarship.
+      Their dedication, curiosity, and success inspire the next generation to aim high, embrace learning, and make a positive impact in the world.
     </p>
     <div class="hero-divider"></div>
   </div>
-
   <!-- Floating Shapes -->
   <div class="hero-shape shape1"></div>
   <div class="hero-shape shape2"></div>
@@ -47,30 +48,27 @@ $result = $conn->query("SELECT * FROM previous_scholars ORDER BY period_from ASC
   <div class="hero-shape shape4"></div>
 </section>
 
-<!-- SCHOLARS MASONRY SECTION -->
+<!-- SCHOLARS SECTION -->
 <section class="scholars-section py-5">
   <div class="container">
-    <?php if ($result && $result->num_rows > 0): ?>
-      <div class="row g-4" data-masonry='{"percentPosition": true }'>
-        <?php while ($row = $result->fetch_assoc()): ?>
-          <div class="col-md-6 col-lg-4">
-            <div class="scholar-masonry-card p-4 h-100">
+    <?php if (!empty($students)): ?>
+      <?php foreach ($students as $year => $year_students): ?>
 
-              <!-- Scholar Name -->
-              <h4><?= htmlspecialchars($row['name']) ?></h4>
-
-              <!-- Scholar Designation -->
-              <p class="designation"><?= htmlspecialchars($row['designation']) ?></p>
-
-              <!-- Scholar Period -->
-              <p class="period"><?= htmlspecialchars($row['period_from']) ?> - <?= htmlspecialchars($row['period_to']) ?></p>
+        <div class="row g-4 mb-5" data-masonry='{"percentPosition": true }'>
+          <?php foreach ($year_students as $student): ?>
+            <div class="col-md-6 col-lg-4">
+              <div class="scholar-masonry-card p-4 h-100">
+                <h4><?= htmlspecialchars($student['name']) ?></h4>
+                <p><strong>Year:</strong> <?= htmlspecialchars($student['year']) ?></p>
+                <p><strong>Marks:</strong> <?= htmlspecialchars($student['marks']) ?></p>
+              </div>
             </div>
-          </div>
-        <?php endwhile; ?>
-      </div>
+          <?php endforeach; ?>
+        </div>
+      <?php endforeach; ?>
     <?php else: ?>
       <div class="alert alert-info text-center">
-        No previous scholars added yet. Please check back later.
+        No scholarship students added yet. Please check back later.
       </div>
     <?php endif; ?>
   </div>
@@ -88,8 +86,6 @@ $result = $conn->query("SELECT * FROM previous_scholars ORDER BY period_from ASC
 
 <!-- External CSS -->
 <link rel="stylesheet" href="css/previous-scholars.css">
-
-
 
 </body>
 

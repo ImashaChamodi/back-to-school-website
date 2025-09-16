@@ -1,8 +1,8 @@
 /* =======================================
    HERO SECTION
-   ======================================= */
-   .hero {
-    background: linear-gradient(to right,#000000, #24c1dd );
+======================================= */
+.hero {
+    background: linear-gradient(to right, #000000, #24c1dd);
     min-height: 100vh;
     position: relative;
     overflow: hidden;
@@ -36,106 +36,82 @@
     opacity: 0.8;
 }
 
-/* =======================================
-   SECTION TITLES (OFFICE BEARERS, COMMITTEE, ADVISORY)
-   ======================================= */
-.opabearerssection-title {
-    
-    font-weight: 300;       /* Bold */
-   
+/* Section Titles */
+.office-bearers-title {
+    font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 15px;
     color: #000000;
     font-size: 3.5rem;
 }
 
-
-
-/* Responsive adjustments for section titles */
+/* Responsive Titles */
 @media (max-width: 992px) {
     .office-bearers-title { font-size: 2.2rem; }
-    .committee-title { font-size: 2rem; }
-    .advisory-title { font-size: 1.8rem; }
+    .committee-title      { font-size: 2rem; }
 }
-
 @media (max-width: 576px) {
     .office-bearers-title { font-size: 1.8rem; }
-    .committee-title { font-size: 1.6rem; }
-    .advisory-title { font-size: 1.5rem; }
+    .committee-title      { font-size: 1.6rem; }
 }
 
 /* =======================================
-   OFFICE BEARERS CARD
-   ======================================= */
-.fixed-card {
-    max-width: 350px;
-    min-height: 380px;
-    margin: auto;
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
+   CARDS FIXED SIZE
+======================================= */
+.fixed-card, .committee-card, .shadow-sm {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-.fixed-card img {
-    max-height: 200px;
-    object-fit: contain;
-    margin-top: 15px;
-}
-
-.fixed-card .card-body {
-    padding: 15px;
-    text-align: center;
-}
-
-/* =======================================
-   COMMITTEE CARD
-   ======================================= */
-.committee-card {
-    max-width: 250px;
-    height: auto;
     margin: auto;
-    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.fixed-card { width: 100%; max-width: 350px; min-height: 380px; }
+.committee-card { width: 100%; max-width: 250px; min-height: 330px; }
+
+/* IMAGE FIT */
+.card-img-auto {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: block;
+}
+
+/* CARD BODY */
+.fixed-card .card-body, .committee-card .card-body, .shadow-sm .card-body {
+    flex: 1;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     overflow: hidden;
 }
 
-.committee-card img {
-    max-height: 180px;
-    object-fit: contain;
-    margin-top: 10px;
-}
-
-/* =======================================
-   ADVISORY LIST
-   ======================================= */
-.advisory-list .list-group-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    padding: 15px;
-}
-
-.advisory-list h6 {
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-}
-
-.advisory-list p {
-    margin: 0;
+.fixed-card h5, .committee-card h6, .fixed-card p, .committee-card p {
+    margin: 0.2rem 0;
     font-size: 0.9rem;
-    color: #24c1dd;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* =======================================
-   BUTTONS
-   ======================================= */
+/* Limit last paragraph to 2 lines */
+.fixed-card .card-body p:last-child, .committee-card .card-body p:last-child {
+    max-height: 2.4rem;
+    overflow: hidden;
+}
+
+/* Responsive Cards */
+@media (max-width: 992px) { .fixed-card, .committee-card { max-width: 90%; } }
+@media (max-width: 576px) { .fixed-card, .committee-card { max-width: 100%; } }
+
+/* BUTTON */
 .btn-setting {
     display: inline-block;
     padding: 10px 25px;
@@ -144,8 +120,4 @@
     max-width: 220px;
     text-align: center;
 }
-
-form .btn-setting {
-    display: inline-block;
-    margin: 0 auto;
-}
+form .btn-setting { margin: 0 auto; }

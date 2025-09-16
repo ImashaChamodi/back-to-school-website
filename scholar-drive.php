@@ -44,7 +44,10 @@ include 'includes/navbar.php';
     <div class="container text-center">
 
       <!-- Section Title -->
-      <h2 class="donatetext">Our Strategic Actions</h2>
+      <div class="main-title">
+     <h2>Our Strategic Actions</h2>
+    </div>
+      
 
       <!-- Image -->
       <div class="scholar-actions-image-wrapper mb-4">
@@ -99,43 +102,50 @@ include 'includes/navbar.php';
   </section>
 
 
-  <!-- ROADMAP SECTION (NEW DESIGN) -->
-  <section class="scholar-roadmap-section">
-    <div class="container">
-      <h2 class="donatetext">Roadmap to 60% Pass Rate</h2>
-      <p class="scholar-section-text text-center">
-        Step-by-step annual actions to ensure students succeed in the Grade 5 Scholarship Exam by 2028.
-      </p>
-
-      <div class="scholar-roadmap-grid">
-        <div class="scholar-roadmap-card">
-          <div class="scholar-card-year">2024</div>
-          <div class="scholar-card-title">Foundation Year</div>
-          <p>Begin extra after school classes, identify learning gaps, and provide targeted support for students.</p>
-        </div>
-        <div class="scholar-roadmap-card">
-          <div class="scholar-card-year">2025</div>
-          <div class="scholar-card-title">Building Confidence</div>
-          <p>Monthly mock exams, parent seminars, and reward milestones to encourage improvement.</p>
-        </div>
-        <div class="scholar-roadmap-card">
-          <div class="scholar-card-year">2026</div>
-          <div class="scholar-card-title">Expanding Support</div>
-          <p>Free evening study sessions, motivational guest lectures, and teacher support to strengthen learning.</p>
-        </div>
-        <div class="scholar-roadmap-card">
-          <div class="scholar-card-year">2027</div>
-          <div class="scholar-card-title">Focused Excellence</div>
-          <p>Exam-oriented coaching, one-on-one mentoring, and collaborative group learning for top results.</p>
-        </div>
-        <div class="scholar-roadmap-card">
-          <div class="scholar-card-year">2028</div>
-          <div class="scholar-card-title">Achieve 60% Pass Rate</div>
-          <p>Targeted strategies culminate in reaching the 60% pass rate for Grade 5 Scholarship Exam, improving student success.</p>
-        </div>
-      </div>
+<!-- ROADMAP SECTION (2026 - 2028 ONLY) -->
+<section class="scholar-roadmap-section">
+  <div class="container">
+  <div class="main-title">
+     <h2>Roadmap to 60% Pass Rate</h2>
     </div>
-  </section>
+    
+   
+    <p class="scholar-section-text text-center">
+      The Scholar Drive project begins in 2026 and step by step will build academic excellence 
+      to achieve the <strong>60% pass rate target</strong> by 2028.
+    </p>
+
+    <div class="scholar-roadmap-grid">
+
+      <!-- 2026 -->
+      <div class="scholar-roadmap-card">
+        <div class="scholar-card-year">2026</div>
+        <div class="scholar-card-title">Foundation Year</div>
+        <p>Introduce after-school coaching, identify learning gaps, and begin regular progress tracking 
+        through practice tests and feedback sessions.</p>
+      </div>
+
+      <!-- 2027 -->
+      <div class="scholar-roadmap-card">
+        <div class="scholar-card-year">2027</div>
+        <div class="scholar-card-title">Strengthening Performance</div>
+        <p>Expand focused exam-oriented teaching, conduct monthly mock exams, provide one-on-one mentoring, 
+        and organize motivational seminars for students and parents.</p>
+      </div>
+
+      <!-- 2028 -->
+      <div class="scholar-roadmap-card">
+        <div class="scholar-card-year">2028</div>
+        <div class="scholar-card-title">Achieve 60% Pass Rate</div>
+        <p>Consolidate strategies with intensive coaching, continuous mock exams, and collaborative study programs, 
+        successfully reaching the <strong>60% pass rate</strong> in the Grade 5 Scholarship Exam.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
   <?php include 'includes/footer.php'; ?>
 
